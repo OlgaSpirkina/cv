@@ -1,0 +1,115 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Mega', sans-serif;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+}
+.logo{
+  font-size: 2rem;
+  text-transform: full-width;
+  /*font-weight: bold;*/
+}
+.mainContainer{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #f7e7ce;
+  width: 85vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+#olga{
+  height: 60vh;
+}
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+nav ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+nav li {
+    display: inline-block;
+    height: 100px;
+    line-height: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: .5s transform;
+  padding: 10px;
+  margin: 10px;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+nav a:hover {
+  width: 100%;
+  transform: scale(1.1);
+}
+nav li ul {
+    position: absolute;
+    display: none;
+}
+nav li:hover ul {
+   display: block;
+   width: inherit;
+}
+
+nav li ul li,
+nav li ul li a
+{
+   display: block;
+   width: inherit;
+   font-size: 1.5rem;
+   margin: 5px 0;
+   padding: 5px 5px;
+
+ }
+nav li ul li a:hover {
+  background: #d3d2d0;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85vw;
+  height: 20vh;
+  margin: 10px auto;
+}
+/*@media screen and (min-width:900px) {
+  #olga {
+    display: inline-block;
+    float: left;
+    width: 30%;
+  }
+  header{
+    width: 30vw;
+  }
+  nav{
+    display: inline-block;
+    width: 100%;
+    overflow:auto;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 100%;
+    overflow:auto;
+  }
+
+  header, footer {
+    background-color: transparent;
+  }
+  section{
+    margin:0 1%;
+    padding:0 1%;
+  }
+}*/
