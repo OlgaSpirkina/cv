@@ -3,23 +3,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="mainpage.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainpagemedia.css">
     <title>cv</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header class="logo">
         <h1>olga spirkina</h1>
         <p>developpeuse web</p>
-      </div>
     </header>
     <main>
       <div class="mainContainer">
         <img id="olga" src="/home/olga/Downloads/olga.jpg" alt="la photo de Olga Spirkina">
-        <nav>
+        <nav id="elem">
           <ul>
             <li class="titles"><a href="/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/formation.html">formation</a>
               <ul>
@@ -42,14 +37,15 @@
               </ul>
             </li>
           </ul>
+          <p id="lorem" class="elemhide">Linus Torvalds: <br><q>Intelligence is the ability to avoid doing work, yet getting the work done.</q></p>
         </nav>
       </div>
-          <p id="lorem">Linus Torvalds: <br><q>Intelligence is the ability to avoid doing work, yet getting the work done.</q></p>
     </main>
     <footer>
-        <a class="tooltip" href="/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/form.html"><img  class="email" src="photos/photo.png" alt="email"><span class="tooltiptext">email me</span></a>
+        <a class="tooltip" href="/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/form.html"><img src="photos/photo.png" alt="email"><span class="tooltiptext">email me</span></a>
         <a class="tooltip" href="https://www.linkedin.com/in/olga-spirkina-3940555a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BYro0VD9jSsy5fNTFH7yvxg%3D%3D"><img src="photos/smalllinkedin.png" alt="logo de LinkedIn"><span class="tooltiptext">find me on LinkedIn</span></a>
         <a class="git tooltip" href="https://github.com/OlgaSpirkina"><img src="photos/smalltelephon.png" alt="logo de GitHub"><span class="tooltiptext">check my github</span></a>
+        <a class="tooltip" href="photos/cv.pdf" download="cv de Olga" target="_blank"><img src="photos/pdf.png" alt="pdf icon"><span class="tooltiptext">download my cv</span></a>
     </footer>
   </body>
 </html>
