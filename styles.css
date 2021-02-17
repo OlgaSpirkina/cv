@@ -9,21 +9,20 @@ nav > ul{
   width: 50vw;
   height: 10vh;
   margin: 0 auto;
-  font-size: 2rem;
   text-transform: full-width;
   list-style: none;
 }
 nav > ul > li{
-  margin: 0 10%;
+  margin: 0 5%;
 }
 nav > ul > li > a {
   text-decoration: none;
   background-color: #f7e7ce;
   color: #000;
   text-shadow: 3px 3px #d7d6d4;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: solid 2px #f7e7ce;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .active{
     background: #fff;
@@ -114,7 +113,7 @@ section{
 .flip-back,
 .programming-back
 {
-  background-color: #78bcff;
+  background-color: #494c68;
   color: white;
   transform: rotateY(180deg);
 }
@@ -153,4 +152,10 @@ footer > p > a {
   font-size: 1.5rem;
   text-align: justify;
   line-height: 1.7;
+}
+.cartes{
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 45%;
 }

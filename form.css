@@ -1,0 +1,15 @@
+body{
+  margin: 5px;
+  padding: 5px;
+}
+fieldset{
+  width: 20%;
+  height: 40%;
+}
+label{
+  display: inline-block;
+  width: 100px;
+}
+input{
+  width: 200px;
+}
