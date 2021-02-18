@@ -15,6 +15,7 @@ body{
        url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
+/* La bare de navigation */
 nav > ul{
   display: flex;
   flex-flow: row;
@@ -36,10 +37,12 @@ nav > ul > li > a {
   border: solid 2px #f7e7ce;
   border-radius: 5px;
 }
+/* Le style de la page où on se touve*/
 .active{
     background: #fff;
     opacity: 1;
 }
+/* Style des section et aside */
 main{
     display: flex;
     flex-flow: row-reverse;
@@ -64,9 +67,19 @@ main{
 section{
     width: 80%;
     display: flex;
-    margin: 5% .5%;
+    margin: 5% 5%;
     font-size: 1.2rem;
     text-align: justify;
+}
+/* Style de la page divers. Flip-box*/
+.cartes{
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+.indivers{
+  margin: 5% 0;
 }
 .flip-box,
 .flip-languages,
@@ -137,6 +150,11 @@ section{
     font-size: 1rem;
     padding: 10px;
 }
+.headingtext{
+  border: solid 1px #d7d6d4;
+  border-radius: 5px;
+}
+/* Le footer et les icones des réseaux pro*/
 footer > p{
   margin: 1% auto;
   width: 85vw;
@@ -149,6 +167,7 @@ footer > p > a {
 .ld{
   margin-left: 20%;
 }
+/* Style des page formation.html et expérience.html*/
 #fitness, #education{
   margin: 0 5%;
   text-align: justify;
@@ -161,10 +180,4 @@ footer > p > a {
   font-size: 1.5rem;
   text-align: justify;
   line-height: 1.7;
-}
-.cartes{
-  width: 100%;
-  position: absolute;
-  top: 75%;
-  left: 45%;
 }

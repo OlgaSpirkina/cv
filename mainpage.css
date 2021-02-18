@@ -22,6 +22,7 @@ body{
        url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
+/*Le header avec le text nom/prénom/developpeuse*/
 .logo{
   display: flex;
   flex-direction: row;
@@ -32,6 +33,7 @@ body{
   font-size: 2rem;
   text-transform: full-width;
 }
+/*Style des main et la grande photo*/
 main{
   height: 60vh;
   padding: 10px;
@@ -47,6 +49,7 @@ main{
 #olga{
   height: 60vh;
 }
+/*La bar de navigation avec le menu déroulant*/
 nav{
   display: flex;
   flex-flow: row wrap;
@@ -81,7 +84,6 @@ nav li ul {
 }
 nav li:hover ul {
    display: block;
-   /*width: inherit;*/
    width: 250px;
 }
 
@@ -99,11 +101,34 @@ nav li ul li a:hover {
   width: 300px;
   text-align: center;
 }
-
+/*Les titres des ul dans la bar de navigation déroulante*/
 .titles{
   margin: 0 10px;
 }
-
+/*Le text qui disparait*/
+#elem {
+    overflow: visible;
+    position: relative;
+}
+.elemhide {
+    position: absolute;
+    z-index: 1;
+}
+#elem:hover .elemhide {
+    display: none;
+}
+#lorem{
+  width: 600px;
+  position: absolute;
+  display: inline-block;
+  left: 25%;
+  bottom: 100px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 3px 3px #fff;
+}
+/*Footer avec les tooltip: le text qui apparait quand on met la souris par-dessus de l'icone*/
 footer {
   display: flex;
   flex-direction: row;
@@ -146,26 +171,4 @@ footer {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-#elem {
-    overflow: visible;
-    position: relative;
-}
-.elemhide {
-    position: absolute;
-    z-index: 1;
-}
-#elem:hover .elemhide {
-    display: none;
-}
-#lorem{
-  width: 600px;
-  position: absolute;
-  display: inline-block;
-  left: 25%;
-  bottom: 100px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  text-shadow: 3px 3px #fff;
 }
