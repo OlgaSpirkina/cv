@@ -1,0 +1,108 @@
+@media screen
+  and (device-width: 360px)
+  and (device-height: 740px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    *{
+      margin: 0;
+      padding: 5px;
+    }
+    section{
+      height: 690px;
+      border: solid 2px red;
+      margin-bottom: 5px;
+    }
+    li{
+      list-style-type: none;
+    }
+    .fas, .far, .fab{
+      scale: 3;
+    }
+    .fab{
+      display: inline-block;
+      margin: 10px;
+    }
+    .fa{
+      background: yellow;
+      display: inline-block;
+      position: fixed;
+      margin-right: 22px;
+      right: 0;
+      top: 5;
+      scale: 2;
+    }
+    nav{
+      display: none;
+      /*display: flex;*/
+      border: 2px solid grey;
+      width: 85vw;
+      height: 130px;
+      position: absolute;
+      margin: 0;
+      padding: 5px;
+    }
+    .hidden_visible{
+      text-decoration: none;
+    }
+    /* .fa:hover nav{
+       display: block;
+       width: 250px;
+    } */
+    #elem {
+    overflow: visible;
+    position: relative;
+}
+  .elemhide {
+    position: absolute;
+    z-index: 1;
+}
+  #elem:hover .elemhide {
+    display: none;
+}
+    /* styliser l'image*/
+    .image{
+      border: 2px solid green;
+      width: 300px;
+      height: 400px;
+    }
+    .descriptif{
+      border: 2px solid silver;
+      width: 300px;
+      height: 250px;
+      margin: 5px 0;
+    }
+    .web, .sports{
+      border: 2px solid pink;
+      margin-bottom: 5px;
+      width: 300px;
+      height: 300px;
+    }
+    h1{
+      text-align: center;
+    }
+    #contact{
+      display: flex;
+      flex-direction: column;
+      height: 600px
+    }
+    .phone, .email, .paris{
+      margin: 15px auto;
+      width: 250px;
+      height: 15vh;
+      background-color: #EFE5F3;
+      color: #9B59B6;
+      align-items: center;
+      border-radius: 20px;
+    }
+    footer{
+      display: block;
+      border: 2px solid blue;
+      height: 90px;
+      width: 300px;
+      background-color: silver;
+      padding-bottom: 0;
+      margin: 5px auto;
+      font-size: .8rem;
+      text-align: center;
+    }
+}
