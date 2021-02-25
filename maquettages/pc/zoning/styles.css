@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-transform: full-width;
+  border: solid 3px;
+}
+main{
+  height: 60vh;
+  border: solid 3px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 80vw;
+  margin: 10px auto;
+}
+#olga{
+  height: 58vh;
+  margin: 5px;
+  width: 20vw;
+  border: solid 2px;
+  background-color: rgba(145,163,176, .3);
+  line-height: 4;
+}
+strong{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/*La bar de navigation*/
+.titles{
+  display: inline-block;
+  border: solid 2px red;
+  width: 300px;
+  height: 30vh;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.hide{
+  display: block;
+  border: solid 2px green;
+  height: 10vh;
+  font-size: 1.8rem;
+  margin: 5px;
+}
+a{
+  color: #000;
+}
+#lorem{
+  position: relative;
+  border: solid 2px;
+  height: 10vh;
+  top: 120px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+  height: 15vh;
+  margin: 5px auto;
+  border: 3px solid;
+}
+footer div{
+  width: 100px;
+  height: 10vh;
+  border: 2px solid;
+  margin: 10px;
+}
