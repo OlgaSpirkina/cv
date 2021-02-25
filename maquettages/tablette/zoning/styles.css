@@ -1,0 +1,153 @@
+@media screen
+  and (device-width: 360px)
+  and (device-height: 740px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    *{
+      margin: 0;
+      padding: 5px;
+    }
+    section{
+      height: 690px;
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+      margin-bottom: 5px;
+    }
+    li{
+      list-style-type: none;
+    }
+    .fas, .far, .fab{
+      scale: 3;
+    }
+    .fab{
+      display: inline-block;
+      margin: 10px;
+    }
+    .fa{
+      background: yellow;
+      display: inline-block;
+      position: fixed;
+      margin-right: 22px;
+      right: 0;
+      top: 5;
+      scale: 2;
+      z-index: 2;
+    }
+    nav{
+      display: none;
+      /* display: flex; */
+      flex-direction: column;
+      align-items: center;
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+      height: 690px;
+      border: 2px solid grey;
+      background-color: rgba(201,192,187, 0.7);
+      width: 85vw;
+      position: absolute;
+      z-index: 1;
+      font-size: 2rem;
+      line-height: 3;
+    }
+    nav ul{
+      height: 500px;
+      position: absolute;
+      margin-top: 70px;
+    }
+    nav p{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    .hidden_visible{
+      text-decoration: none;
+    }
+    .fa:hover nav{
+       display: block;
+       width: 250px;
+    }
+    /* styliser l'image*/
+    .image{
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+      /* border: 2px solid green; */
+      width: 300px;
+      height: 400px;
+    }
+    .inimage{
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .descriptif{
+      /* border: 2px solid silver; */
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+      width: 300px;
+      height: 250px;
+      margin: 5px 0;
+    }
+    .web, .sports{
+      /* border: 2px solid pink; */
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+      margin-bottom: 5px;
+      width: 300px;
+      height: 300px;
+    }
+    h1{
+      text-align: center;
+    }
+    #contact{
+      display: flex;
+      flex-direction: column;
+      height: 600px
+    }
+    .phone, .email, .paris{
+      margin: 15px auto;
+      width: 250px;
+      height: 15vh;
+      /* background-color: #EFE5F3; */
+      background-color: rgba(145,163,176, .3);
+      /* color: #9B59B6; */
+      color: black;
+      align-items: center;
+      border-radius: 20px;
+    }
+    footer{
+      display: block;
+      border: 2px solid black;
+      height: 90px;
+      width: 300px;
+      background-color: rgba(145,163,176, .7);
+      padding-bottom: 0;
+      margin: 0 auto;
+      padding: 5px;
+      font-size: .8rem;
+      text-align: center;
+    }
+    .indivers{
+      display: inline-block;
+      width: 125px;
+      /* width: 80vw;
+      height: 600px; */
+      height: 270px;
+      line-height: 2;
+      text-align: justify;
+      margin: 2%;
+      /* border: 2px solid yellow;
+      background-color: #feda41; */
+      border: solid 2px rgba(145,163,176);
+      background-color: rgba(145,163,176, .3);
+    }
+    .linkedin, .github{
+      display: inline-block;
+      width: 50px;
+      border: 2px solid;
+    }
+    strong{
+      font-size: 1rem;
+    }
+    .small{
+      font-size: .7rem;
+    }
+}
