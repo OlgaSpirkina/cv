@@ -33,7 +33,6 @@
     }
     nav{
       display: none;
-      /*display: flex;*/
       border: 2px solid grey;
       width: 85vw;
       height: 130px;
@@ -41,24 +40,12 @@
       margin: 0;
       padding: 5px;
     }
-    .hidden_visible{
+    ul{
       text-decoration: none;
     }
-    /* .fa:hover nav{
-       display: block;
-       width: 250px;
-    } */
-    #elem {
-    overflow: visible;
-    position: relative;
-}
-  .elemhide {
-    position: absolute;
-    z-index: 1;
-}
-  #elem:hover .elemhide {
-    display: none;
-}
+    .parent:hover .navbar{
+    display: flex;
+    }
     /* styliser l'image*/
     .image{
       border: 2px solid green;
@@ -101,7 +88,8 @@
       width: 300px;
       background-color: silver;
       padding-bottom: 0;
-      margin: 5px auto;
+      margin: 0 auto;
+      padding: 5px;
       font-size: .8rem;
       text-align: center;
     }

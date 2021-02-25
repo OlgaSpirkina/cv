@@ -120,7 +120,8 @@
       width: 300px;
       background-color: rgba(145,163,176, .7);
       padding-bottom: 0;
-      margin: 5px auto;
+      margin: 0 auto;
+      padding: 5px;
       font-size: .8rem;
       text-align: center;
     }
