@@ -1,0 +1,84 @@
+body{
+  margin: 10px;
+  padding: 10px;
+}
+.accueil{
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: 300px;
+  height: 10vh;
+  border: 2px solid;
+  text-align: center;
+}
+.pages{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.inpages{
+  width: 200px;
+  height: 10vh;
+  border: 2px solid;
+  margin: 30px;
+}
+#lists{
+  width: 600px;
+  margin: 0 auto;
+}
+ul{
+  display: inline-block;
+  width: 150px;
+  height: 30vh;
+  border: 2px solid;
+}
+.vl{
+  position: absolute;
+  left: 50%;
+  margin-top: 45px;
+  border-left: 4px solid green;
+  height: 100px;
+}
+.hl{
+  position: absolute;
+  margin-top: 95px;
+  border-bottom: 4px solid green;
+  width: 300px;
+}
+.fl{
+  position: absolute;
+  left: 42%;
+  margin-top: 95px;
+  border-left: 4px solid green;
+  height: 55px;
+}
+.dl{
+  position: absolute;
+  left: 57.7%;
+  margin-top: 95px;
+  border-left: 4px solid green;
+  height: 55px;
+}
+.ulf{
+  position: absolute;
+  left: 50%;
+  margin-top: 130px;
+  border-left: 4px solid blue;
+  height: 110px;
+}
+.ule{
+  position: absolute;
+  left: 40%;
+  margin-top: 130px;
+  border-left: 4px solid blue;
+  height: 110px;
+}
+.uld{
+  position: absolute;
+  left: 60%;
+  margin-top: 130px;
+  border-left: 4px solid blue;
+  height: 110px;
+}
