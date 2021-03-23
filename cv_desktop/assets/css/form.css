@@ -1,0 +1,56 @@
+body{
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-family: 'Lexend Mega', sans-serif;
+}
+@font-face {
+  font-family: 'Lexend Mega';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff2'), /* Super Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+fieldset{
+  width: 25%;
+  height: 40%;
+  margin: 1% auto;
+  padding: 20px;
+  background-color: #e5e6e7;
+}
+label{
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+}
+input{
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+input[type=submit]{
+  width: 30%;
+  margin-bottom: 0px;
+  background-color: #0018a8;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Lexend Mega', sans-serif;
+}
+legend{
+  font-weight: bold;
+}
+textarea{
+  margin: 0 10%;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,183 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Mega', sans-serif;
+}
+@font-face {
+  font-family: 'Lexend Mega';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff2'), /* Super Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+/* La bare de navigation */
+nav > ul{
+  display: flex;
+  flex-flow: row;
+  width: 50vw;
+  height: 10vh;
+  margin: 0 auto;
+  text-transform: full-width;
+  list-style: none;
+}
+nav > ul > li{
+  margin: 0 5%;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  background-color: #f7e7ce;
+  color: #000;
+  text-shadow: 3px 3px #d7d6d4;
+  font-size: 1.7rem;
+  border: solid 2px #f7e7ce;
+  border-radius: 5px;
+}
+/* Le style de la page où on se touve*/
+.active{
+    background: #fff;
+    opacity: 1;
+}
+/* Style des section et aside */
+main{
+    display: flex;
+    flex-flow: row-reverse;
+    background-color: #f7e7ce;
+    width: 85vw;
+    height: 75vh;
+    margin: 0 auto;
+}
+.left{
+  width: 40%;
+  margin-left: 5%;
+}
+.left > h1{
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.info{
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+section{
+    width: 80%;
+    display: flex;
+    margin: 5% 5%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+/* Style de la page divers. Flip-box*/
+.cartes{
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+.indivers{
+  margin: 5% 0;
+}
+.flip-box,
+.flip-languages,
+.flip,
+.programming
+{
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-box-inner,
+.flip-languages-inner,
+.flip-inner,
+.programming-inner
+ {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner,
+.flip-languages:hover .flip-languages-inner,
+.flip:hover .flip-inner,
+.programming:hover .programming-inner
+{
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back,
+.flip-languages-front, .flip-languages-back,
+.flip-front, .flip-back,
+.programming-front, .programming-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front,
+.flip-languages-front,
+.flip-front,
+.programming-front
+{
+  background-color: #d7d6d4;
+  color: black;
+}
+
+.flip-box-back,
+.flip-languages-back,
+.flip-back,
+.programming-back
+{
+  background-color: #494c68;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-back > p,
+.flip-languages-back > ul,
+.flip-back > ul,
+.programming-back > ul
+{
+    font-size: 1rem;
+    padding: 10px;
+}
+.headingtext{
+  border: solid 1px #d7d6d4;
+  border-radius: 5px;
+}
+/* Le footer et les icones des réseaux pro*/
+footer > p{
+  margin: 1% auto;
+  width: 85vw;
+  margin-left: 80%;
+}
+footer > p > a {
+  text-decoration: none;
+  color: #000;
+}
+.ld{
+  margin-left: 20%;
+}
+/* Style des page formation.html et expérience.html*/
+#fitness, #education{
+  margin: 0 5%;
+  text-align: justify;
+}
+
+#education > ul > li,
+#fitness > ul > li,
+#experience > ul > li,
+{
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+}

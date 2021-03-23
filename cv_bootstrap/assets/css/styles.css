@@ -1,0 +1,43 @@
+#img_coding{
+  background: url("/home/olga/Desktop/Exercices/HTML/cv/cv_bootstrap/assets/img/coding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#experience_fitness{
+  background: url("/home/olga/Desktop/Exercices/HTML/cv/cv_bootstrap/assets/img/gym.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fitness_wellness{
+  background-color: rgba(255, 253, 245, 0.4);
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.logo{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 3rem;
+  margin-left: 5px;
+}
+.logo span{
+  font-weight: 400;
+}
+.fas,.fab, .far{
+  margin-top: 20px;
+  scale: 2;
+}
+.list_in_footer {
+  margin: 1.5rem 0;
+}
+.list_in_footer a{
+  text-decoration: none;
+  padding: 0 10px;
+  opacity:0.8;
+}
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

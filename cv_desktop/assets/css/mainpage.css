@@ -1,0 +1,174 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Mega', sans-serif;
+}
+@font-face
+{
+    font-family: 'Orbitron';
+    src: url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/static/Orbitron-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Lexend Mega';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff2'), /* Super Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/home/olga/Desktop/Exercices/HTML/cv/cv_numerique/polices/lexend-mega-v7-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+/*Le header avec le text nom/prénom/developpeuse*/
+.logo{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+}
+.logo{
+  font-size: 2rem;
+  text-transform: full-width;
+}
+/*Style des main et la grande photo*/
+main{
+  height: 60vh;
+  padding: 10px;
+}
+.mainContainer{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #f7e7ce;
+  width: 80vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+#olga{
+  height: 60vh;
+}
+/*La bar de navigation avec le menu déroulant*/
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+nav ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+nav li {
+    display: inline-block;
+    height: 100px;
+    line-height: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 350px;
+  margin: 0 25%;
+  transition: .5s transform;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+nav a:hover {
+  transform: scale(1.1);
+}
+nav li ul {
+    position: absolute;
+    display: none;
+}
+nav li:hover ul {
+   display: block;
+   width: 250px;
+}
+
+nav li ul li,
+nav li ul li a
+{
+   font-size: 1.3rem;
+   padding: 5px 5px;
+   margin-top: 5%;
+
+ }
+nav li ul li a:hover {
+  background: #d3d2d0;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+/*Les titres des ul dans la bar de navigation déroulante*/
+.titles{
+  margin: 0 10px;
+}
+/*Le text qui disparait*/
+#elem {
+    overflow: visible;
+    position: relative;
+}
+.elemhide {
+    position: absolute;
+    z-index: 1;
+}
+#elem:hover .elemhide {
+    display: none;
+}
+#lorem{
+  width: 600px;
+  position: absolute;
+  display: inline-block;
+  left: 25%;
+  bottom: 100px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 3px 3px #fff;
+}
+/*Footer avec les tooltip: le text qui apparait quand on met la souris par-dessus de l'icone*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85vw;
+  margin: 5px auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #d3d2d0;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: .7rem;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #d3d2d0 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
